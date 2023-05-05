@@ -16,8 +16,8 @@ on:
         description: 'SSH connection to Actions'
         required: false
         default: 'false'
-  schedule:
-    - cron: 0 23 */7 * * 
+#  schedule:
+#    - cron: 0 23 */7 * * 
 
 env:
   REPO_URL: https://github.com/Lienol/openwrt
@@ -27,11 +27,11 @@ env:
   DIY_P1_SH: LienolOS.sh
   DIY_P2_SH: LienolOS2.sh
   SSH_ACTIONS: false
-  UPLOAD_BIN_DIR: false
+  UPLOAD_BIN_DIR: true
   UPLOAD_FIRMWARE: true
   UPLOAD_COWTRANSFER: false
   UPLOAD_WETRANSFER: false
-  UPLOAD_RELEASE: true
+  UPLOAD_RELEASE: false
   TZ: Asia/Shanghai
 
 jobs:
